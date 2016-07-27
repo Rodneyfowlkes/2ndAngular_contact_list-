@@ -1,0 +1,19 @@
+<nav class="panel book_width">
+  <p class="panel-heading head_panel">
+     You Are Only As Good As The Company You Keep
+  </p>
+  <p class="panel-tabs">
+    <a class="is-pulled-right" href="/#/addContact"><i class="fa fa-plus" aria-hidden="true"></i>  Add Contact</a>
+  </p>
+  
+
+  <p class="panel-block is-active" ng-repeat="con in vm.contacts">
+   <a href="/#/contact/{{con._id}}"> <span class="panel-icon">
+      <i class="fa fa-book"></i>
+    </span>
+    {{con.name}}
+    </a>
+  </p>
+
+  
+</nav>

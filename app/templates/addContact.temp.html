@@ -1,0 +1,32 @@
+<form class="book_width" ng-submit='vm.publish_contact(newContact)'>
+<label class="label">Name</label>
+<p class="control">
+  <input class="input" type="text" placeholder="Text input" ng-model="newContact.name" required>
+</p>
+
+<label class="label">Phone</label>
+<p class="control has-icon has-icon-right">
+  <input class="input" type="tel" placeholder="Text input" ng-model="newContact.phone" required>
+
+
+</p>
+
+
+<label class="label">Email</label>
+<p class="control has-icon has-icon-right">
+  <input class="input " type="email" placeholder="Email input" ng-model="newContact.email" required>
+
+</p>
+
+<label class="label">Notes</label>
+<p class="control">
+  <textarea class="textarea" placeholder="Textarea" ng-model="newContact.notes"></textarea>
+</p>
+
+
+<p class="control">
+  <button class="button is-primary">Submit</button>
+  <a href="/#/"><button class="button is-link">Cancel</button></a>
+</p>
+
+</form>
