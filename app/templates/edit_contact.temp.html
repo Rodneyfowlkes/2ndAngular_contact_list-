@@ -1,0 +1,49 @@
+<nav class="panel book_width">
+
+  <p class="panel-heading head_panel">
+  <span class="img_div">
+    <img  class="pro_img" src="http://i0.wp.com/www.artifacting.com/blog/wp-content/uploads/2010/11/Spiderman.png?resize=246%2C155"></span>
+  </p>
+ <form ng-submit='vm.saveChanges(vm.contact)'>
+  <p class="panel-heading">
+    <span class="icon"> 
+    
+    <i class="fa fa-user" aria-hidden="true"></i>
+    
+    </span><input class="input" type="text"  ng-model="vm.contact.name" required>
+  </p>
+
+    <p class="panel-heading">
+   <span class="icon">
+
+ 
+   <i class="fa fa-mobile" aria-hidden="true"></i>
+    
+    </span> <input class="input" type="tel" ng-model="vm.contact.phone" required>
+  </p>
+  
+    <p class="panel-heading">
+   <span class="icon">
+   <i class="fa fa-envelope" aria-hidden="true"></i>
+     
+</span> <input class="input " type="email" ng-model="vm.contact.email" required>
+  </p>
+   <p class="panel-heading">
+      <span class="icon">
+      <i class="fa fa-sticky-note" aria-hidden="true"></i>
+      
+</span><textarea class="textarea" ng-model="vm.contact.notes"></textarea>  
+  </p> 
+   <div class="panel-block">
+<!-- <a class="button" href="/#/contact/{{vm.contact._id}}"> -->
+
+  <button class="button is-primary"> <i class="fa fa-pencil-square-o"></i> Save Changes</button>
+
+<!-- 
+</a> -->
+
+  </div>
+
+</form>
+
+</nav>

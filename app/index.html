@@ -6,10 +6,12 @@
     <title>My Cool Project</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
   </head>
-  <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
+  <body ng-app='app'>
+    <div class="Main_container" ui-view>
+      <p>Welcome to your life. {{100 * 100}}</p>
     </div>
     <script src="js/bundle.js"></script>
   </body>
